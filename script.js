@@ -37,31 +37,33 @@ $(document).ready(function () {
         $(".container").append($row.clone());
         $hour.text(workHours[i]);
 
-        if (hour === hourOfDay[i]) {
-            $event.addClass("present");
-        }
+        // if (hour === hourOfDay[i]) {
+        //     $event.addClass("present");
+        // }
         if (hour < hourOfDay[i]) {
             $event.addClass("past");
         }
         //makes everything green. Need to add clause to change future color
         // if(hour > hourOfDay[i]){
         //     $event.addClass("future");
-        // }
-
-    }
+        //  }
+// document.getElementById("result").innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    // }
     // btnInsert.onclick = function () {
     //     const key = input.value;
     //     const value = inpValue.value;
     // }
     
-    if (typeof(Storage) !== "undefined") {
-        // Store
-        localStorage.setItem("lastname", "Smith");
-        // Retrieve
-        document.getElementById("result").innerHTML = localStorage.getItem("lastname");
-       } //else {
-    //     document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
-    //   }
+    
+
+    // if (typeof(Storage) !== "undefined") {
+    //     // Store
+    //     localStorage.setItem("lastname", "Smith");
+    //     // Retrieve
+    //     document.getElementById("result").innerHTML = localStorage.getItem("lastname");
+    //    } //else {
+    // //     document.getElementById("result").innerHTML = "Sorry, your browser does not support Web Storage...";
+    // //   }
 
     console.log(localStorage);
 
